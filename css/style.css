@@ -1,0 +1,19 @@
+body{
+	background-color: #e1e1e1;
+	margin: 0;
+	padding: 0;
+}
+.header{
+	background-color: #5e5e5e;
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 5px;
+	text-align: center;
+}
+label.error {
+  color: red;
+}
+.center{
+	margin: 0 auto;
+    width: 50%;
+}

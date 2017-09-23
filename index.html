@@ -1,0 +1,86 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Online Assessment</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Online Assessment</h1>
+	</div>	
+
+	<div class="container">
+		<div class="row">
+			<div class="center">
+				
+				<form id="appointment_form" class="form-horizontal" method="post">
+
+					<div id="new_button" class="form-group row">
+						<input type="button" value="New" class="new btn btn-primary">
+					</div>
+					<div id="add_cancel">
+						<div class="form-group row">
+							<input type="submit" value="Add" class="add btn btn-primary">&nbsp;
+							<input type="button" value="Cancel" class="cancel btn btn-warning">				
+						</div>
+						<div class="row form_inputs">
+							<table>
+								<tr>
+									<td><label for="date">Date: </label> </td>
+									<td><input type="date" name="date" id="date" class="form-control date" cols="25"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="time">Time: </label></td>
+									<td><input type="time" name="time" id="time" class="form-control time" cols="25"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="description">Description: </label></td>
+									<td><textarea class="description" name="description" class="form-control" cols="25" rows="5"></textarea></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</form>
+			</div>		
+		</div>
+		
+		<div class="row">
+			<div class="center">
+				<form class="form-horizontal">
+					<div class="form-group row">
+						<input type="text" class="search form-control col-md-5" placeholder="---Search Data---">&nbsp;
+						<input type="button" value="Search" id="search_btn" class="btn btn-info">
+					</div>
+				</form>	
+			</div>
+		</div>
+
+		<div class="row" id="appointment_table">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Time (24hr)</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody class="table_rows">
+					
+				</tbody>
+			</table>
+		</div>
+		<div class="row" id="error_table"></div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
