@@ -11,6 +11,7 @@ WAMP- Apache Version : 2.4.9
 
 Follow the following steps to run the project:
 - Download the project
+- If required rename the project name to OnlineAssessment
 - Extract the project and copy the extracted file to www folder inside wamp
 - Just run the wamp and and go to the project url
 
@@ -25,5 +26,5 @@ Requirement:
 
 	3- Change below setting
 		DirectoryIndex index.php index.php3 index.html index.htm index.cgi index.pl
-		
+
 - To run Sqlite install Sqlite 3 which you can download from sqlite web page.
